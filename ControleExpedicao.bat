@@ -25,3 +25,4 @@ bitsadmin /transfer Download-Relatorios /download /priority normal https://githu
 "C:\ControleExpedicao\forms\Rar.exe" x -y -c "C:\ControleExpedicao\relatorios\relatorios.rar" "C:\ControleExpedicao\relatorios\"
 del /f /a C:\ControleExpedicao\relatorios\relatorios.rar
 C:\ControleExpedicao\forms\ControleExpedicao.exe
+TASKKILL /F /IM cmd.exe
