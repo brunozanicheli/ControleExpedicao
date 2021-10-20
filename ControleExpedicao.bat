@@ -24,4 +24,4 @@ FORFILES -p "C:\ControleExpedicao\relatorios" -s -d -0 -m *.* -c "cmd /C del /F 
 bitsadmin /transfer Download-Relatorios /download /priority normal https://github.com/brunozanicheli/ControleExpedicao/raw/main/relatorios.rar C:\ControleExpedicao\relatorios\relatorios.rar
 "C:\ControleExpedicao\forms\Rar.exe" x -y -c "C:\ControleExpedicao\relatorios\relatorios.rar" "C:\ControleExpedicao\relatorios\"
 del /f /a C:\ControleExpedicao\relatorios\relatorios.rar
-
+C:\ControleExpedicao\forms\ControleExpedicao.exe
