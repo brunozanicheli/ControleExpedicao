@@ -17,7 +17,6 @@ if not exist C:\ControleExpedicao\anexos (
 if not exist C:\ControleExpedicao\forms\Rar.exe (
 bitsadmin /transfer Download-Rar /download /priority normal https://github.com/brunozanicheli/diversos/raw/main/Rar.exe C:\ControleExpedicao\forms\Rar.exe
 )
-FORFILES -p "C:\ControleExpedicao\forms" -s -d -0 -m ControleExpedicao.bat -c "cmd /C del /F /Q @path"
 bitsadmin /transfer Download-Bat /download /priority normal https://github.com/brunozanicheli/ControleExpedicao/raw/main/ControleExpedicao.bat C:\ControleExpedicao\forms\ControleExpedicao.bat
 FORFILES -p "C:\ControleExpedicao\forms" -s -d -0 -m ControleExpedicao.exe -c "cmd /C del /F /Q @path"
 bitsadmin /transfer Download-Exe /download /priority normal https://github.com/brunozanicheli/ControleExpedicao/raw/main/ControleExpedicao.exe C:\ControleExpedicao\forms\ControleExpedicao.exe
